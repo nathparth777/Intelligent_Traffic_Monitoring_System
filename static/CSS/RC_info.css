@@ -1,0 +1,66 @@
+body {
+  font-family: sans-serif;
+  background: #dfe3ee;
+
+}
+.header {
+    background: #3b5998;
+    color: white;
+    height: 70px;
+    text-align: center;
+    font-size: 26px;
+}
+
+.main {
+/*    margin-top: 80px;*/
+/*    margin-left: 300px;*/
+/*    margin-right: 300px;*/
+}
+
+.column1 {
+  float: left;
+  width: 44%;
+  padding-left: 20px;
+    margin-left: 70px;
+  height: 820px;
+    background: white;
+    margin-bottom: 30px;
+
+}
+
+.column1 h1 {
+
+}
+
+.column2 {
+    float: left;
+    width: 44%;
+    margin-right: 70px;
+    height: 820px;
+    background: white;
+        margin-bottom: 30px;
+
+}
+
+button[type=submit] {
+            background-color: #3b5998;
+            border: none;
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 30px;
+            width: 250px;
+            font-size: 20px;
+}
+
+.column2 img{
+    margin-top: 100px;
+}
+
+
+
+
+
+

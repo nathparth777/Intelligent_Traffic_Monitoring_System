@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/RC_info.css') }}">
+    <title>Title</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Intelligent Traffic Monitoring System</h1>
+    </div>
+    <form action = "/verified">
+        <div class="row">
+            <div class="main">
+                <div class="column1">
+                    <h1>Registration Certificate Info</h1>
+                    <label style="font-size: 23px;"><b>Vehicle Number:</b></label>
+                    <label style="font-size: 23px;">{{data.0.0}}</label>
+                    <br>
+                    <br>
+                    <label style="font-size: 23px;"><b>Vehicle Name:</b></label>
+                    <label style="font-size: 23px;">{{data.0.1}}</label>
+                    <br><br>
+                    <label style="font-size: 23px;"><b>Registering Authority:</b></label>
+                    <label style="font-size: 23px;">{{data.0.2}}</label>
+                    <br><br>
+                    <label style="font-size: 23px;"><b>Person Name:</b></label>
+                    <label style="font-size: 23px;">{{data.0.3}}</label>
+                    <br>
+                    <br>
+                    <label style="font-size: 23px;"><b>Chassis Number:</b></label>
+                    <label style="font-size: 23px;">{{data.0.4}}</label>
+                    <br><br>
+                    <label style="font-size: 23px;"><b>Engine Number:</b></label>
+                    <label style="font-size: 23px;">{{data.0.5}}</label>
+                    <br><br>
+                    <label style="font-size: 23px;"><b>Vehicle Color:</b></label>
+                    <label style="font-size: 23px;">{{data.0.6}}</label>
+                    <br><br>
+                    <label style="font-size: 23px;"><b>Maker Name:</b></label>
+                    <label style="font-size: 23px;">{{data.0.7}}</label>
+                    <br><br>
+                    <label style="font-size: 23px;"><b>Model Name:</b></label>
+                    <label style="font-size: 23px;">{{data.0.8}}</label>
+                    <br><br>
+                    <label style="font-size: 23px;"><b>Fuel Type:</b></label>
+                    <label style="font-size: 23px;">{{data.0.9}}</label>
+                    <br><br>
+                    <label style="font-size: 23px;"><b>Vehicle Class:</b></label>
+                    <label style="font-size: 23px;">{{data.0.10}}</label>
+                    <br><br>
+                    <label style="font-size: 23px;"><b>Insurance Policy:</b></label>
+                    <label style="font-size: 23px;">{{data.0.11}}</label>
+                    <br><br>
+                    <label style="font-size: 23px;"><b>PUC:</b></label>
+                    <label style="font-size: 23px;">{{data.0.12}}</label>
+                    <br><br>
+                    <label style="font-size: 23px;"><b>Insurance Valid till:</b></label>
+                    <label style="font-size: 23px;">{{data.0.13}}</label>
+                    <br><br>
+                    <label style="font-size: 23px;"><b>PUC Valid till:</b></label>
+                    <label style="font-size: 23px;">{{data.0.14}}</label>
+                    <br><br>
+
+                    <button type = "submit">Back to Home</button>
+
+                </div>
+                <div class="column2">
+                    <img src="{{ url_for('static', filename='images/rc.jpg')}}" alt="Registration Certificate" width="550" height="350">
+
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

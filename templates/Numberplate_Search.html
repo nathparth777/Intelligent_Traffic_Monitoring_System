@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Number_css.css') }}">
+    <title>Title</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Intelligent Traffic Monitoring System</h1>
+    </div>
+    <form action="/scan">
+        <div class="row1">
+            <div class="box">
+                <h1>Number Plate Scan</h1>
+                <button type = "submit" class="save" style="font-size: 20px;">Scan</button>
+            </div>
+
+        </div>
+
+    </form>
+    <form action="/search" method="post" enctype = "multipart/form-data">
+        <div class="row2">
+            <div class="box">
+                <h1>Vehicle Number</h1>
+                {% if data1 is not none %}
+                    <input type="text" name="number" value="{{data1}}" required>
+                 {% else %}
+                        <input type="text" name="number" required>
+                 {% endif %}
+                <br>
+                <button type = "submit" style="font-size: 20px;">Search</button>
+                <p>{{data}}</p>
+            </div>
+
+        </div>
+
+    </form>
+    <form action="/Main">
+        <div class="row3">
+            <button type="submit" class="save" style="font-size: 20px;">Home</button>
+        </div>
+    </form>
+</body>
+</html>

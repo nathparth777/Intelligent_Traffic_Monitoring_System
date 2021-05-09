@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home_css.css') }}">
+    <title>Title</title>
+</head>
+<body>
+<form method ="post" action="/">
+    <div class="row">
+            <div class="main">
+                <div class="column1">
+                    <h1>Welcome to ITMS</h1>
+                    <h2>Intelligent Traffic Monitoring System</h2>
+                </div>
+                <div class="column2">
+                    <h1>Vehicle Registration Certificate</h1>
+                    <div class="type-1">
+                      <input type = "submit" name="RC" value = "Search RC" style="font-size: 20px;">
+                    </div>
+                    <h1>Driving License</h1>
+                    <div class="type-2">
+                      <input type = "submit" name="DL" value = "Search DL" style="font-size: 20px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--  <button type="submit" name="RC" value="RC">  Vehicle RC</button>-->
+<!--  <button type="submit" name="DL" value="DL"> Driving License </button>-->
+</form>
+</body>
+</html>

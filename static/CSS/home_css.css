@@ -1,0 +1,76 @@
+body {
+  font-family: sans-serif;
+  background-color: #eeeeee;
+
+}
+
+.main {
+    margin-top: 80px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.column1 {
+  float: left;
+  width: 47%;
+  padding: 10px;
+  height: 550px; /* Should be removed. Only for demonstration */
+    background: linear-gradient(120DEG, #3B5998, #FFFFFF);
+    color: white;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.column1 h1 {
+    padding-top: 190px;
+}
+
+.column2 {
+  float: left;
+  width: 47%;
+  padding: 10px;
+  height: 550px; /* Should be removed. Only for demonstration */
+    background: #dfe3ee;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.column2 h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.type-1 {
+    text-align: center;
+}
+.type-1 input[type=submit] {
+            background-color: #3b5998;
+            border: none;
+            text-decoration: none;
+            color: white;
+            padding: 20px 20px;
+            margin: 20px 20px;
+            cursor: pointer;
+            border-radius: 30px;
+            width: 200px;
+
+}
+
+.type-2 {
+    text-align: center;
+}
+.type-2 input[type=submit] {
+            background-color: #3b5998;
+            border: none;
+            text-decoration: none;
+            color: white;
+            padding: 20px 20px;
+            margin: 20px 20px;
+            cursor: pointer;
+            border-radius: 30px;
+            width: 200px;
+
+
+
+}
+
+
+

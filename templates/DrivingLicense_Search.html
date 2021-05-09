@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/DLS_css.css') }}">
+    <title>Title</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Intelligent Traffic Monitoring System</h1>
+    </div>
+    <form action="/Face_scan">
+        <div class="row1">
+            <div class="box">
+                <h1>Face Scan</h1>
+                <button type = "submit" class="save" style="font-size: 20px;">Scan</button>
+                <p>{{dataf}}</p>
+            </div>
+
+        </div>
+
+    </form>
+    <form action="/License_search" method="post" enctype = "multipart/form-data">
+        <div class="row2">
+            <div class="box">
+                <h1>License Number</h1>
+                <input type="text" name="L_number" required>
+                <br>
+                <button type = "submit" style="font-size: 20px;">Search</button>
+                <p>{{datal}}</p>
+            </div>
+
+        </div>
+
+    </form>
+    <form action="/Main">
+        <div class="row3">
+            <button type="submit" class="save" style="font-size: 20px;">Home</button>
+        </div>
+    </form>
+</body>
+</html>

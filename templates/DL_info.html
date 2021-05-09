@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/DL_info.css')}}">
+    <title>Title</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Intelligent Traffic Monitoring System</h1>
+    </div>
+    <form action = "/DL_info">
+        <div class="row">
+            <div class="main">
+                <div class="column1">
+                    <h1>Driving License Info</h1>
+                    <label style="font-size: 23px;"><b>Name:</b></label>
+                    <label style="font-size: 23px;">{{data.0.1}}</label>
+                    <br>
+                    <br>
+                    <label style="font-size: 23px;"><b>Status:</b></label>
+                    <label style="font-size: 23px;">{{data.0.2}}</label>
+                    <br><br>
+                    <label style="font-size: 23px;"><b>Sex:</b></label>
+                    <label style="font-size: 23px;">{{data.0.12}}</label>
+                    <br><br>
+                    <label style="font-size: 23px;"><b>License no:</b></label>
+                    <label style="font-size: 23px;">{{data.0.3}}</label>
+                    <br>
+                    <br>
+                    <label style="font-size: 23px;"><b>Issue Date:</b></label>
+                    <label style="font-size: 23px;">{{data.0.4}}</label>
+                    <br><br>
+                    <label style="font-size: 23px;"><b>Validity:</b></label>
+                    <label style="font-size: 23px;">{{data.0.5}}</label>
+                    <br><br>
+                    <label style="font-size: 23px;"><b>Vehicle Class:</b></label>
+                    <label style="font-size: 23px;">{{data.0.6}}</label>
+                    <br><br>
+                    <label style="font-size: 23px;"><b>License Authority:</b></label>
+                    <label style="font-size: 23px;">{{data.0.7}}</label>
+                    <br><br>
+                    <label style="font-size: 23px;"><b>License Code:</b></label>
+                    <label style="font-size: 23px;">{{data.0.8}}</label>
+                    <br><br>
+                    <label style="font-size: 23px;"><b>DOB:</b></label>
+                    <label style="font-size: 23px;">{{data.0.9}}</label>
+                    <br><br>
+                    <label style="font-size: 23px;"><b>Blood Group:</b></label>
+                    <label style="font-size: 23px;">{{data.0.10}}</label>
+                    <br><br>
+                    <label style="font-size: 23px;"><b>Address:</b></label>
+                    <label style="font-size: 23px;">{{data.0.11}}</label>
+                    <br><br>
+
+                    <button type = "submit">Back to Home</button>
+
+                </div>
+                <div class="column2">
+                    <img src="{{ url_for('static', filename='images/dl.jpg')}}" alt="Driving License" width="500" height="400">
+
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
